@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/obj/Release/net8.0/linux-x64/scopedcss/projectbundle/BlueDevilBridges.bundle.scp.css",
+      "PackagePath": "staticwebassets/BlueDevilBridges.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/results.csv",
+      "PackagePath": "staticwebassets/results.csv"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/uploadedCSVs/Mentee_Survey.csv",
+      "PackagePath": "staticwebassets/uploadedCSVs/Mentee_Survey.csv"
+    },
+    {
+      "Id": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/wwwroot/uploadedCSVs/Mentor_Survey.csv",
+      "PackagePath": "staticwebassets/uploadedCSVs/Mentor_Survey.csv"
+    },
+    {
+      "Id": "obj/Release/net8.0/linux-x64/staticwebassets/msbuild.BlueDevilBridges.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/linux-x64/staticwebassets/msbuild.build.BlueDevilBridges.props",
+      "PackagePath": "build\\BlueDevilBridges.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/linux-x64/staticwebassets/msbuild.buildMultiTargeting.BlueDevilBridges.props",
+      "PackagePath": "buildMultiTargeting\\BlueDevilBridges.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/linux-x64/staticwebassets/msbuild.buildTransitive.BlueDevilBridges.props",
+      "PackagePath": "buildTransitive\\BlueDevilBridges.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

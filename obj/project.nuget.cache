@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "dgSpecHash": "NxUV7s7WkHs=",
+  "success": true,
+  "projectFilePath": "/Users/catr/Downloads/blue-devil-beyond-main-BDB 2/BDB/BlueDevilBridges.csproj",
+  "expectedPackageFiles": [
+    "/Users/catr/.nuget/packages/azure.ai.openai/1.0.0-beta.17/azure.ai.openai.1.0.0-beta.17.nupkg.sha512",
+    "/Users/catr/.nuget/packages/azure.core/1.39.0/azure.core.1.39.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/blazor-apexcharts/3.3.0/blazor-apexcharts.3.3.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/csvhelper/27.2.1/csvhelper.27.2.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/huggingface/0.2.4/huggingface.0.2.4.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.authorization/8.0.2/microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.components/8.0.2/microsoft.aspnetcore.components.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.components.analyzers/8.0.2/microsoft.aspnetcore.components.analyzers.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.components.forms/8.0.2/microsoft.aspnetcore.components.forms.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.components.web/8.0.2/microsoft.aspnetcore.components.web.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.aspnetcore.metadata/8.0.2/microsoft.aspnetcore.metadata.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.1/microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.jsinterop/8.0.2/microsoft.jsinterop.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.semantickernel/1.14.1/microsoft.semantickernel.1.14.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.semantickernel.abstractions/1.14.1/microsoft.semantickernel.abstractions.1.14.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.semantickernel.connectors.openai/1.14.1/microsoft.semantickernel.connectors.openai.1.14.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/microsoft.semantickernel.core/1.14.1/microsoft.semantickernel.core.1.14.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/numsharp/0.30.0/numsharp.0.30.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/scottplot/5.0.35/scottplot.5.0.35.nupkg.sha512",
+    "/Users/catr/.nuget/packages/scottplot.blazor/5.0.35/scottplot.blazor.5.0.35.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp/2.88.8/skiasharp.2.88.8.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp.nativeassets.linux.nodependencies/2.88.8/skiasharp.nativeassets.linux.nodependencies.2.88.8.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp.nativeassets.macos/2.88.8/skiasharp.nativeassets.macos.2.88.8.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp.nativeassets.webassembly/2.88.6/skiasharp.nativeassets.webassembly.2.88.6.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp.nativeassets.win32/2.88.8/skiasharp.nativeassets.win32.2.88.8.nupkg.sha512",
+    "/Users/catr/.nuget/packages/skiasharp.views.blazor/2.88.6/skiasharp.views.blazor.2.88.6.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.diagnostics.diagnosticsource/8.0.1/system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.text.json/8.0.2/system.text.json.8.0.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/catr/.nuget/packages/tiktoken/1.1.2/tiktoken.1.1.2.nupkg.sha512",
+    "/Users/catr/.nuget/packages/torchsharp/0.95.0/torchsharp.0.95.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "BlueDevilBridges depends on TorchSharp (>= 0.94.5) but TorchSharp 0.94.5 was not found. An approximate best match of TorchSharp 0.95.0 was resolved.",
+      "libraryId": "TorchSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

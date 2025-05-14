@@ -1,0 +1,89 @@
+@page "/PastPairingsDropDown"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Matches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <hr class="spacer">
+    <div class="row boxes">
+        <div class="col-12">
+            <button class="btn btn-info" @onclick="ChangeStatus">
+                <span>Past Pairings</span> <span>@(closed ? "+" : "-")</span>
+            </button>
+            <div class="collapse @(closed ? "" : "show")">
+                <div class="past-pairings">
+                    <p>There are no past pairings to view here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+body {
+    background-color: #f0f0f0;
+}
+.boxes {
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 40px;
+    width: auto;
+    margin: auto;
+
+}
+.boxheaders {
+    text-align: center;
+    font-weight: bold;
+    color: #012169; 
+}
+.spacer {
+    height: 40px;
+}
+.past-pairings {
+    padding: 10px;
+    /* background-color: #f8f9fa; */ /* Remove background color */
+    /* border: 1px solid #dee2e6; */ /* Remove border */
+    border-radius: 4px;
+    margin-top: 10px;
+}
+button.btn.btn-info {
+    background-color: #fff !important; 
+    color: #012169 !important; 
+    border-color: #fff !important; 
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    outline: none !important; /* Remove outline */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button.btn.btn-info:hover {
+    background-color: #fff !important;
+    color: #012169 !important;
+    border-color: #fff !important;
+}
+button.btn.btn-info:focus {
+    outline: none !important; /* Ensure no outline on focus */
+}
+
+
+</style>
+
+@code {
+    public bool closed = true;
+
+    public void ChangeStatus() {
+        closed = !closed;
+    }
+
+    public DateTime GetDate() {
+        return DateTime.Now;
+    }
+}

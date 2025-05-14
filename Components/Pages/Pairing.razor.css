@@ -1,0 +1,37 @@
+.title {
+    color: #012169;
+    text-align: center; /* not updating */
+    font-family: 'Roboto', sans-serif;
+}
+
+.themed-button {
+    background-color: #012169;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.download-button {
+    background-color: #012169;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+

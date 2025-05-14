@@ -1,0 +1,112 @@
+@page "/pairing"
+@using Microsoft.AspNetCore.Components.Forms
+@using System.IO
+@using Microsoft.AspNetCore.Components
+@using Data_analytics
+@inject IWebHostEnvironment WebHostEnvironment
+@inject PairScore _pairScore
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Pairing.razor.css">
+</head>
+
+<body>
+        <h2 class="title">Upload Survey Data</h2>
+
+        <p class="paragraph">Note that file types must be in CSV format for both mentor and mentee data. Once both files are uploaded, press "Start Pairing!" to obtain matches.</p>
+        <p> </p>
+
+        <div class="form">
+            <label for="mentorFile">Upload the MENTOR survey data:</label>
+            <InputFile id="mentorFile" OnChange="HandleMentorFileSelected" accept=".csv" />
+        </div>
+
+        <div class="form">
+            <label for="menteeFile">Upload the MENTEE survey data:</label>
+            <InputFile id="menteeFile" OnChange="HandleMenteeFileSelected" accept=".csv" />
+        </div>
+
+        <p> </p>
+        <p> </p>
+
+        <button class="btn btn-success" @onclick="StartPairing">Start Pairing!</button>
+  
+        <p class ="paragraph">@status</p>
+        
+
+        <!-- download button after pairs are generated -->
+        @if(string.IsNullOrEmpty(outputFile) == false) {
+        {
+            <a href="@outputFile" download="results.csv" class="download-button">Download Pairing Results</a>
+        }
+
+        }
+
+    
+</body>
+
+@code {
+    private string status = "";
+    private IBrowserFile mentor;
+    private IBrowserFile mentee;
+    private String outputFile;
+
+    private async Task HandleMentorFileSelected(InputFileChangeEventArgs e)
+    {
+        mentor = e.File;
+        await SaveFileAsync(mentor, "Mentor_Survey.csv");
+    }
+
+    private async Task HandleMenteeFileSelected(InputFileChangeEventArgs e)
+    {
+        mentee = e.File;
+        await SaveFileAsync(mentee, "Mentee_Survey.csv");
+    }
+
+    private async Task SaveFileAsync(IBrowserFile file, string fileName)
+    {
+        if (file == null)
+        {
+            status = $"No file selected for {fileName}.";
+            return;
+        }
+
+        var filePath = Path.Combine(WebHostEnvironment.WebRootPath, "uploadedCSVs", fileName);
+        //make a new directory called uploadedCSVs if the folder doesn't exist already
+        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+        using (var fileStream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.OpenReadStream().CopyToAsync(fileStream);
+        }
+        status = $"{fileName} successfully uploaded!";
+    }
+
+
+    private void StartPairing()
+    {
+        if (mentor == null || mentee == null)
+        {
+            status = "Please upload BOTH Mentor and Mentee survey files in order to start generate pairings.";
+            return;
+        }
+        Pair();
+        Match();
+    }
+
+    private void Pair() {
+        status = "Pairing process in progress...";
+        // var scores = _pairScore.CalculateScores(null, null);
+    }
+    private void Match() {
+        status = "Pairing done";
+        string[] lines = {};
+        string filePath = Path.Combine(WebHostEnvironment.WebRootPath, "results.csv");
+        File.WriteAllLines(filePath, lines);
+        outputFile = "/results.csv";
+
+    }
+}

@@ -1,0 +1,37 @@
+.title[b-sttvy4sup1] {
+    color: #012169;
+    text-align: center; /* not updating */
+    font-family: 'Roboto', sans-serif;
+}
+
+.themed-button[b-sttvy4sup1] {
+    background-color: #012169;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.paragraph[b-sttvy4sup1] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.download-button[b-sttvy4sup1] {
+    background-color: #012169;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+
